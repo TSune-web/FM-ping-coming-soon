@@ -33,8 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Ping Coming Soon Page](https://tsune-web.github.io/FM-ping-coming-soon/)
 
 ## My process
 
@@ -45,7 +44,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- svg files
+- svg icons
 
 ### What I learned
 
@@ -131,6 +130,6 @@ Explanation:
 
 ### Useful resources
 
-- [CSS-Tricks](https://css-tricks.com/) - This helped me for CSS property order. For more details about CSS properties grouped by type[Nicolas Gallagher's Idiomatic CSS](https://github.com/necolas/idiomatic-css)
+- [CSS-Tricks](https://css-tricks.com/) - This helped me for CSS property order. For more details about CSS properties grouped by type [Nicolas Gallagher's Idiomatic CSS](https://github.com/necolas/idiomatic-css)
 - [w3resource](https://www.w3resource.com/javascript/form/email-validation.php) - This helped me gain a better understanding of JavaScript regex(Regular Expressions) to validate an email.
 - [RegExr](https://regexr.com/) - This website is to test your regex and give you a thorough explanation of each part of the given regex separately.
