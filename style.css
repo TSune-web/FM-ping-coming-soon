@@ -1,0 +1,275 @@
+:root {
+  /* screen sides */
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  /* primary color */
+  --blue: #4f7df3;
+
+  /* secondary colors */
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+
+  /* neutral colors */
+  --gray: #969696;
+  --v-dark-blue: hsl(209, 33%, 12%);
+}
+
+/* **************************
+    Reset & General setting
+**************************** */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/* **************************
+    Styling - grouped by type:
+        - Positioning
+        - Display & Box Model
+        - Color
+        - Text
+        - Other properties
+**************************** */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+header {
+  margin-top: 10%;
+  margin-bottom: 3.5rem;
+}
+
+header > img {
+  width: 75%;
+}
+
+main {
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1.title {
+  color: var(--gray);
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+h1.title > strong {
+  color: black;
+}
+
+p.title-message {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+form {
+  margin: 3rem;
+}
+
+input {
+  width: 100%;
+  padding: 1.5rem 3.2rem;
+  border: 1px solid var(--pale-blue);
+  border-radius: 3rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+input::placeholder {
+  color: var(--pale-blue);
+}
+
+form.error input {
+  border-color: red;
+}
+
+label {
+  display: none;
+}
+
+form .msg {
+  font-weight: 300;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+form.error .msg {
+  margin: 1rem 0 1.5rem;
+  color: red;
+}
+
+form.success .msg {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #00ac00;
+}
+
+button {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1.5rem 3.2rem;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 3rem;
+  box-shadow: 0 4px 8px #4f7df350;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  opacity: 0.9;
+}
+
+.dashboard {
+  width: 80%;
+  margin: 3rem 0 5rem;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.icon__wrapper {
+  padding: 0.5rem;
+  margin-right: 1.5rem;
+  line-height: 0.8;
+  border: 1px solid #9696964e;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icon__wrapper:last-child {
+  margin-right: 0;
+}
+
+.icon__wrapper:hover,
+.icon__wrapper:focus {
+  background-color: var(--blue);
+  outline-offset: 0;
+}
+
+.icon {
+  display: inline-block;
+  padding: 0.9rem;
+  background-size: 1.75rem 1.75rem;
+  background-repeat: no-repeat;
+}
+
+.icon:hover,
+.icon:active {
+  filter: brightness(0) invert(1);
+}
+
+.icon-fb {
+  background-image: url(./images/font-awesome/facebook-f-brands.svg);
+}
+
+.icon-twitter {
+  background-image: url(./images/font-awesome/twitter-brands.svg);
+}
+
+.icon-instagram {
+  background-image: url(./images/font-awesome/instagram-brands.svg);
+}
+
+footer p {
+  color: var(--gray);
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    margin-top: 8.5rem;
+    margin-bottom: 5rem;
+  }
+
+  header > img {
+    width: 100%;
+  }
+
+  h1.title {
+    font-size: 4.5rem;
+    letter-spacing: 1.6px;
+    font-weight: 300;
+  }
+
+  p.title-message {
+    font-size: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  input {
+    order: 1;
+    width: 34%;
+    padding: 2rem 3.2rem;
+    margin-right: 3rem;
+  }
+
+  form .msg {
+    order: 3;
+    display: block;
+    text-align: left;
+    width: 50%;
+    transform: translate(1.65rem, -1rem);
+  }
+
+  button {
+    order: 2;
+    width: 16%;
+    padding: 2.15rem 0;
+    font-size: 1.6rem;
+    border-radius: 5rem;
+  }
+
+  .dashboard {
+    width: 55%;
+    margin: 1rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+  }
+}

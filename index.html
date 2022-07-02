@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>FM - Ping coming soon page</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo.svg" alt="logo" />
+    </header>
+
+    <main>
+      <h1 class="title">We are launching <strong>soon!</strong></h1>
+      <p class="title-message">Subscribe and get notified</p>
+      <form novalidate>
+        <input
+          type="email"
+          id="email"
+          placeholder="Your email Address..."
+          required
+        />
+        <label for="email">Email</label>
+        <p class="msg" id="msg"></p>
+        <button type="submit">Notify Me</button>
+      </form>
+      <div class="img-wrapper">
+        <img
+          src="./images/illustration-dashboard.png"
+          alt="dashboard"
+          class="dashboard"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <div class="icons">
+        <div class="icon__wrapper">
+          <i class="icon icon-fb"></i>
+        </div>
+        <div class="icon__wrapper">
+          <i class="icon icon-twitter"></i>
+        </div>
+        <div class="icon__wrapper">
+          <i class="icon icon-instagram"></i>
+        </div>
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
