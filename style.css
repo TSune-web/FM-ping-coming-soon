@@ -160,7 +160,7 @@ footer {
   margin: 3rem 0;
 }
 
-.icon__wrapper {
+a {
   padding: 0.5rem;
   margin-right: 1.5rem;
   line-height: 0.8;
@@ -169,12 +169,12 @@ footer {
   cursor: pointer;
 }
 
-.icon__wrapper:last-child {
+a:last-child {
   margin-right: 0;
 }
 
-.icon__wrapper:hover,
-.icon__wrapper:focus {
+a:hover,
+a:focus {
   background-color: var(--blue);
   outline-offset: 0;
 }
